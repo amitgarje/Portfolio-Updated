@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Garje | Full Stack Java Developer & UI/UX Designer</title>
+    <meta name="description"
+        content="Portfolio of Amit Garje, a Full Stack Java Developer and UI/UX Designer aiming for internships and impactful projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js for CGPA Graph -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Add these inside <head> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Three.js for Shader Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="shader-background.js" defer></script>
+    <!-- <script src="background.js" defer></script> -->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Amit Garje</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#tech-stack">Tech Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="name" data-aos="fade-up" data-aos-delay="100">Amit Garje</h1>
+                <h2 class="title" data-aos="fade-up" data-aos-delay="200">Full Stack Java Developer <span
+                        class="divider">|</span> UI/UX Designer</h2>
+                <p class="tagline" data-aos="fade-up" data-aos-delay="300"><span id="typewriter"></span><span
+                        class="cursor-blink">|</span></p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="assets/Amit Garje Java Developer CV (1).pdf" class="btn btn-outline" download>Download
+                        Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-area">
+                    <!-- Premium 3D Hero Profile -->
+                    <div class="premium-hero-img">
+                        <div class="hero-glow-backdrop"></div>
+                        <img src="assets/Amit Garje java developer.jpg" alt="Amit Garje Profile Photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section (Bento Grid) -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="bento-grid">
+                <!-- Tile 1: Main Intro -->
+                <div class="bento-card bento-wide" data-aos="fade-up">
+                    <div class="bento-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3>Who I Am</h3>
+                    <p>Computer Engineering student and <strong>Full Stack Java Developer</strong>. I build
+                        high-performance systems from the database up to the final pixel.</p>
+                </div>
+
+                <!-- Tile 2: Value Proposition -->
+                <div class="bento-card bento-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bento-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>My Mission</h3>
+                    <p>Fusing architectural precision with creative UI/UX to build products that people love to use.</p>
+                </div>
+
+                <!-- Tile 3: Currently Learning -->
+                <div class="bento-card bento-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bento-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Tech Focus</h3>
+                    <p>Distributed Systems, AI Orchestration, and building 2026-ready web architectures.</p>
+                </div>
+
+                <!-- Tile 4: Experience Highlight -->
+                <div class="bento-card bento-wide bento-highlight" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bento-bg-glow"></div>
+                    <div class="bento-content-wrapper">
+                        <h3>Battle-Tested Engineer</h3>
+                        <p>Architected e-commerce platforms, banking systems, and medical networks. I specialize in
+                            turning complex logic into seamless code.</p>
+                        <a href="#projects" class="btn btn-outline"
+                            style="margin-top: 15px; border-color: rgba(255,255,255,0.4); color: white;">Explore My
+                            Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & Metrics Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <div class="impact-grid">
+                <div class="impact-card" data-aos="zoom-in">
+                    <span class="impact-number" data-target="9.71">0</span>
+                    <p class="impact-label">Current CGPA</p>
+                </div>
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="100">
+                    <span class="impact-number" data-target="8">0</span><span class="impact-plus">+</span>
+                    <p class="impact-label">Projects Completed</p>
+                </div>
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="200">
+                    <span class="impact-number" data-target="10">0</span><span class="impact-plus">+</span>
+                    <p class="impact-label">Hackathons Attended</p>
+                </div>
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="300">
+                    <span class="impact-number" data-target="3">0</span>
+                    <p class="impact-label">Tech Internships</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="icon"><i class="fab fa-java"></i></div>
+                    <h3>Java & Advanced Java</h3>
+                    <p>Core Java, Servlets, JSP</p>
+                    <span class="tag">Bank Mgmt System</span>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <h3>Database Management</h3>
+                    <p>MySQL, SQL</p>
+                    <span class="tag">Restaurant System</span>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><i class="fab fa-html5"></i></div>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                    <span class="tag">Portfolio</span>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Full Stack Dev</h3>
+                    <p>End-to-End Application Dev</p>
+                    <span class="tag">E-commerce</span>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Wireframing, Prototyping</p>
+                    <span class="tag">Design Process</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Modern Tech Stack</h2>
+            <div class="tech-stack-grid">
+                <!-- Frontend -->
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><i class="fab fa-html5" style="color: #E34F26;"></i><span>HTML</span>
+                        </div>
+                        <div class="tech-item"><i class="fab fa-css3-alt" style="color: #1572B6;"></i><span>CSS</span>
+                        </div>
+                        <div class="tech-item"><i class="fab fa-js" style="color: #F7DF1E;"></i><span>JavaScript</span>
+                        </div>
+                        <div class="tech-item"><i class="fab fa-react" style="color: #61DAFB;"></i><span>React</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><i class="fab fa-java" style="color: #007396;"></i><span>Java</span>
+                        </div>
+                        <div class="tech-item"><i class="fas fa-leaf" style="color: #6DB33F;"></i><span>Spring</span>
+                        </div>
+                        <div class="tech-item"><i class="fab fa-node-js"
+                                style="color: #339933;"></i><span>Node.js</span></div>
+                    </div>
+                </div>
+                <!-- Database -->
+                <div class="tech-category">
+                    <h3>Database</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><i class="fas fa-database" style="color: #4479A1;"></i><span>MySQL</span>
+                        </div>
+                        <div class="tech-item"><i class="fas fa-envira" style="color: #47A248;"></i><span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="tech-category">
+                    <h3>Tools</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><i class="fab fa-git-alt" style="color: #F05032;"></i><span>Git</span>
+                        </div>
+                        <div class="tech-item"><i class="fab fa-github"
+                                style="color: var(--text-primary);"></i><span>GitHub</span></div>
+                        <div class="tech-item"><i class="fab fa-figma" style="color: #F24E1E;"></i><span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- AI Tools -->
+                <div class="tech-category">
+                    <h3>AI Tools</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><i class="fas fa-robot" style="color: #10A37F;"></i><span>ChatGPT</span>
+                        </div>
+                        <div class="tech-item"><i class="fas fa-code-branch"
+                                style="color: var(--text-primary);"></i><span>Copilot</span></div>
+                    </div>
+                </div>
+                <!-- DevOps -->
+                <div class="tech-category">
+                    <h3>DevOps</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><i class="fab fa-docker" style="color: #2496ED;"></i><span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1: Sanket -->
+                <div class="flip-card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="flip-card-inner">
+                        <!-- Front View -->
+                        <div class="flip-card-front">
+                            <img src="assets/image1.jpg" alt="Sanket Project" class="project-img">
+                            <div class="project-front-content">
+                                <h3>Sanket &ndash; Sign Language</h3>
+                                <div class="tech-icons">
+                                    <i class="devicon-html5-plain colored"></i>
+                                    <i class="devicon-css3-plain colored"></i>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                    <i class="devicon-java-plain colored"></i>
+                                </div>
+                                <div class="project-front-footer">
+
+                                    <a href="https://sanket-ai-7pou.vercel.app/" class="btn-sm btn-live"><i
+                                            class="fas fa-external-link-alt"></i>
+                                        Demo</a>
+                                    <a href="#" class="btn-sm btn-story"><i class="fas fa-book-open"></i> Story</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Back View -->
+                        <div class="flip-card-back">
+                            <div>
+                                <h3>Project Story</h3>
+                                <div class="story-content">
+                                    <p><strong><i class="fas fa-exclamation-circle"></i> Problem:</strong> Communication
+                                        gap
+                                        between deaf and hearing individuals.</p>
+                                    <p><strong><i class="fas fa-lightbulb"></i> Solution:</strong> An interactive
+                                        platform
+                                        that bridges this gap effortlessly.</p>
+                                    <p><strong><i class="fas fa-star"></i> Key Features:</strong> Real-time translation,
+                                        learning modules for sign language.</p>
+                                    <p><strong><i class="fas fa-tools"></i> Tech:</strong> HTML, CSS, JS, Java Backend
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="btn-flip-back"><i class="fas fa-undo"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: MedExpress -->
+                <div class="flip-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="flip-card-inner">
+                        <!-- Front View -->
+                        <div class="flip-card-front">
+                            <img src="assets/image-2.png" alt="MedExpress" class="project-img">
+                            <div class="project-front-content">
+                                <h3>MedExpress Delivery</h3>
+                                <div class="tech-icons">
+                                    <i class="devicon-java-plain colored"></i>
+                                    <i class="devicon-mysql-plain colored"></i>
+                                    <i class="devicon-html5-plain colored"></i>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                </div>
+                                <div class="project-front-footer">
+
+                                    <a href="https://medxpress-six.vercel.app/" class="btn-sm btn-live"><i
+                                            class="fas fa-external-link-alt"></i>
+                                        Demo</a>
+                                    <a href="#" class="btn-sm btn-story"><i class="fas fa-book-open"></i> Story</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Back View -->
+                        <div class="flip-card-back">
+                            <div>
+                                <h3>Project Story</h3>
+                                <div class="story-content">
+                                    <p><strong><i class="fas fa-exclamation-circle"></i> Problem:</strong> Slow local
+                                        medicine delivery and prescription management.</p>
+                                    <p><strong><i class="fas fa-lightbulb"></i> Solution:</strong> A centralized
+                                        platform
+                                        connecting users with local pharmacies.</p>
+                                    <p><strong><i class="fas fa-star"></i> Key Features:</strong> Secure prescription
+                                        uploads, fast processing, local tracking.</p>
+                                    <p><strong><i class="fas fa-tools"></i> Tech:</strong> Java, MySQL, JS, HTML/CSS</p>
+                                </div>
+                            </div>
+                            <button class="btn-flip-back"><i class="fas fa-undo"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Bank Management -->
+                <div class="flip-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="flip-card-inner">
+                        <!-- Front View -->
+                        <div class="flip-card-front">
+                            <img src="assets/image-3.png" alt="Bank Management" class="project-img">
+                            <div class="project-front-content">
+                                <h3>Bank Management</h3>
+                                <div class="tech-icons">
+                                    <i class="devicon-java-plain colored"></i>
+                                    <i class="devicon-mysql-plain colored"></i>
+                                </div>
+                                <div class="project-front-footer">
+
+                                    <a href="#" class="btn-sm btn-live"><i class="fas fa-external-link-alt"></i>
+                                        Demo</a>
+                                    <a href="#" class="btn-sm btn-story"><i class="fas fa-book-open"></i> Story</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Back View -->
+                        <div class="flip-card-back">
+                            <div>
+                                <h3>Project Story</h3>
+                                <div class="story-content">
+                                    <p><strong><i class="fas fa-exclamation-circle"></i> Problem:</strong> Manual record
+                                        keeping and slow transaction tracking.</p>
+                                    <p><strong><i class="fas fa-lightbulb"></i> Solution:</strong> A robust
+                                        database-driven
+                                        banking application.</p>
+                                    <p><strong><i class="fas fa-star"></i> Key Features:</strong> Secure accounts, live
+                                        transaction logs, deposit/withdrawal logic.</p>
+                                    <p><strong><i class="fas fa-tools"></i> Tech:</strong> Core Java, JDBC, MySQL Server
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="btn-flip-back"><i class="fas fa-undo"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Portfolio -->
+                <div class="flip-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/image-4.png" alt="Personal Portfolio" class="project-img">
+                            <div class="project-front-content">
+                                <h3>Personal Portfolio</h3>
+                                <div class="tech-icons">
+                                    <i class="devicon-html5-plain colored"></i>
+                                    <i class="devicon-css3-plain colored"></i>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                </div>
+                                <div class="project-front-footer">
+
+                                    <a href="https://amitgarje.github.io/AmitGarje-portfolio/"
+                                        class="btn-sm btn-live"><i class="fas fa-external-link-alt"></i>
+                                        Live</a>
+                                    <a href="#" class="btn-sm btn-story"><i class="fas fa-book-open"></i> Story</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h3>Project Story</h3>
+                                <div class="story-content">
+                                    <p><strong><i class="fas fa-exclamation-circle"></i> Problem:</strong> Needed a
+                                        modern way to showcase skills and projects.</p>
+                                    <p><strong><i class="fas fa-lightbulb"></i> Solution:</strong> Built a responsive,
+                                        interactive personal portfolio website.</p>
+                                    <p><strong><i class="fas fa-star"></i> Key Features:</strong> Dark/light mode, smart
+                                        AI chatbot assistant, 3D flip cards, dynamic theming.</p>
+                                    <p><strong><i class="fas fa-tools"></i> Tech:</strong> HTML, CSS, JavaScript</p>
+                                </div>
+                            </div>
+                            <button class="btn-flip-back"><i class="fas fa-undo"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Online Learning -->
+                <div class="flip-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/image-5.png" alt="Online Course Selling Platform" class="project-img">
+                            <div class="project-front-content">
+                                <h3>Online Course Platform</h3>
+                                <div class="tech-icons">
+                                    <i class="devicon-java-plain colored"></i>
+                                    <i class="devicon-mysql-plain colored"></i>
+                                    <i class="devicon-html5-plain colored"></i>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                </div>
+                                <div class="project-front-footer">
+                                    <a href="edu-reu0rpa9a-garjeamit841-gmailcoms-projects.vercel.app" class="btn-sm"><i
+                                            class="fab fa-github"></i> Live</a>
+                                    <a href="#" class="btn-sm btn-story"><i class="fas fa-book-open"></i> Story</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h3>Project Story</h3>
+                                <div class="story-content">
+                                    <p><strong><i class="fas fa-exclamation-circle"></i> Problem:</strong> Instructors
+                                        lack unified tools to sell courses and track students.</p>
+                                    <p><strong><i class="fas fa-lightbulb"></i> Solution:</strong> An end-to-end
+                                        platform for online learning and course management.</p>
+                                    <p><strong><i class="fas fa-star"></i> Key Features:</strong> Separate student and
+                                        instructor dashboards, course creation, progress tracking.</p>
+                                    <p><strong><i class="fas fa-tools"></i> Tech:</strong> Java, MySQL, HTML/CSS, JS</p>
+                                </div>
+                            </div>
+                            <button class="btn-flip-back"><i class="fas fa-undo"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Project Guidance -->
+                <div class="flip-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/image-6.png" alt="Project Guidance Website" class="project-img">
+                            <div class="project-front-content">
+                                <h3>Project Guidance Web</h3>
+                                <div class="tech-icons">
+                                    <i class="devicon-html5-plain colored"></i>
+                                    <i class="devicon-css3-plain colored"></i>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                    <i class="devicon-php-plain colored"></i>
+                                </div>
+                                <div class="project-front-footer">
+
+                                    <a href="project-guide-sf8o2eru0-garjeamit841-gmailcoms-projects.vercel.app"
+                                        class="btn-sm btn-story"><i class="fas fa-book-open"></i> Story</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h3>Project Story</h3>
+                                <div class="story-content">
+                                    <p><strong><i class="fas fa-exclamation-circle"></i> Problem:</strong> Difficulty in
+                                        aligning students with faculty mentors for projects.</p>
+                                    <p><strong><i class="fas fa-lightbulb"></i> Solution:</strong> Centralized
+                                        mentorship platform connecting students and guides.</p>
+                                    <p><strong><i class="fas fa-star"></i> Key Features:</strong> Project proposals,
+                                        milestone tracking, direct faculty communication.</p>
+                                    <p><strong><i class="fas fa-tools"></i> Tech:</strong> HTML, CSS, JavaScript, PHP
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="btn-flip-back"><i class="fas fa-undo"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Optical Shop -->
+                <div class="flip-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/image-7.png" alt="Optical Shop Website" class="project-img">
+                            <div class="project-front-content">
+                                <h3>Optical Shop</h3>
+                                <div class="tech-icons">
+                                    <i class="devicon-html5-plain colored"></i>
+                                    <i class="devicon-css3-plain colored"></i>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                </div>
+                                <div class="project-front-footer">
+
+                                    <a href="optical-26k59mu9b-garjeamit841-gmailcoms-projects.vercel.app"
+                                        class="btn-sm btn-live"><i class="fas fa-external-link-alt"></i>
+                                        Live</a>
+                                    <a href="#" class="btn-sm btn-story"><i class="fas fa-book-open"></i> Story</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h3>Project Story</h3>
+                                <div class="story-content">
+                                    <p><strong><i class="fas fa-exclamation-circle"></i> Problem:</strong> Local optical
+                                        shop had no online presence or product catalog.</p>
+                                    <p><strong><i class="fas fa-lightbulb"></i> Solution:</strong> Interactive digital
+                                        storefront tailored for eyewear.</p>
+                                    <p><strong><i class="fas fa-star"></i> Key Features:</strong> Product gallery
+                                        filtering, customer inquiry forms, responsive design.</p>
+                                    <p><strong><i class="fas fa-tools"></i> Tech:</strong> HTML, CSS, JavaScript</p>
+                                </div>
+                            </div>
+                            <button class="btn-flip-back"><i class="fas fa-undo"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Hackathon Organizer -->
+                <div class="flip-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/image-8.png" alt="Hackathon Organizer Platform" class="project-img">
+                            <div class="project-front-content">
+                                <h3>Hackathon Organizer</h3>
+                                <div class="tech-icons">
+                                    <i class="devicon-html5-plain colored"></i>
+                                    <i class="devicon-css3-plain colored"></i>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                </div>
+                                <div class="project-front-footer">
+
+                                    <a href=" https://quantum-hacks-2026.netlify.app" class="btn-sm btn-live"><i
+                                            class="fas fa-external-link-alt"></i>
+                                        Demo</a>
+                                    <a href="#" class="btn-sm btn-story"><i class="fas fa-book-open"></i> Story</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h3>Project Story</h3>
+                                <div class="story-content">
+                                    <p><strong><i class="fas fa-exclamation-circle"></i> Problem:</strong> Managing
+                                        hackathon registrations, schedules, and judging was chaotic.</p>
+                                    <p><strong><i class="fas fa-lightbulb"></i> Solution:</strong> Complete event
+                                        management website for tech events.</p>
+                                    <p><strong><i class="fas fa-star"></i> Key Features:</strong> Registration portals,
+                                        live schedules, judging coordination systems.</p>
+                                    <p><strong><i class="fas fa-tools"></i> Tech:</strong> HTML, CSS, JavaScript</p>
+                                </div>
+                            </div>
+                            <button class="btn-flip-back"><i class="fas fa-undo"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: Mobile Accessories Shop -->
+                <div class="flip-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/image-9.png" alt="Mobile Accessories Shop" class="project-img">
+                            <div class="project-front-content">
+                                <h3>Mobile Accessories Shop</h3>
+                                <div class="tech-icons">
+                                    <i class="devicon-java-plain colored"></i>
+                                    <i class="devicon-mysql-plain colored"></i>
+                                    <i class="devicon-html5-plain colored"></i>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                </div>
+                                <div class="project-front-footer">
+                                    <a href="https://mobile-accessories-store-production.up.railway.app"
+                                        class="btn-sm btn-live"><i class="fas fa-external-link-alt"></i>
+                                        Live</a>
+                                    <a href="#" class="btn-sm btn-story"><i class="fas fa-book-open"></i> Story</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h3>Project Story</h3>
+                                <div class="story-content">
+                                    <p><strong><i class="fas fa-exclamation-circle"></i> Problem:</strong> Difficulty in
+                                        managing inventory and sales for mobile accessories.</p>
+                                    <p><strong><i class="fas fa-lightbulb"></i> Solution:</strong> A comprehensive
+                                        e-commerce platform for mobile accessories.</p>
+                                    <p><strong><i class="fas fa-star"></i> Key Features:</strong> Product management,
+                                        shopping cart, user authentication, inventory tracking.</p>
+                                    <p><strong><i class="fas fa-tools"></i> Tech:</strong> JSP, Servlet, MySQL, HTML/CSS, JS</p>
+                                </div>
+                            </div>
+                            <button class="btn-flip-back"><i class="fas fa-undo"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Make sure to add this before the closing </body> tag to initialize AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="terminal.js" defer></script>
+    <!-- <script src="cursor.js" defer></script> -->
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Internships</h2>
+            <div class="timeline">
+                <!-- Experience 1: UI/UX Intern -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>UI/UX Design Intern</h3>
+                        <span class="date">Datta Meghe College</span>
+                        <p>Worked on UI/UX design projects and improved user interface experiences for real-world
+                            applications.</p>
+                        <ul class="skills-list">
+                            <li>Wireframing</li>
+                            <li>Prototyping</li>
+                            <li>User Research</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experience 2: Graphic Designer NGO -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Graphic Designer</h3>
+                        <span class="date">NGO</span>
+                        <p>Created posters, social media graphics, and awareness designs for non-profit campaigns and
+                            events.</p>
+                        <ul class="skills-list">
+                            <li>Graphic Design</li>
+                            <li>Social Media</li>
+                            <li>Branding</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experience 3: Quantum Hacks Organizer -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Quantum Hacks Organizer</h3>
+                        <span class="date">Event Management</span>
+                        <p>Led the organization of Quantum Hacks hackathon from concept to execution.</p>
+                        <ul class="skills-list">
+                            <li>Website Dev</li>
+                            <li>Event Management</li>
+                            <li>Leadership</li>
+                            <li>Marketing</li>
+                            <li>Judge Coordination</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experience 4: Hackathon Participant -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Hackathon &amp; Ideathon Participant</h3>
+                        <span class="date">Multiple Events</span>
+                        <p>Participated in multiple hackathons and ideathons focusing on real-world problem solving
+                            using technology.</p>
+                        <ul class="skills-list">
+                            <li>Problem Solving</li>
+                            <li>Team Work</li>
+                            <li>Innovation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI-Human Lab Section -->
+    <section id="ai-lab" class="ai-lab">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">AI-Human Lab <span class="badge-terminal">MODERN WORKFLOW</span></h2>
+            <p class="section-subtitle">Transparency in the age of Agentic AI. How I build with 10x velocity.</p>
+
+            <div class="ai-lab-grid">
+                <!-- Card 1: Agentic Orchestration -->
+                <div class="ai-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="ai-card-glow"></div>
+                    <div class="ai-card-content">
+                        <div class="ai-icon"><i class="fas fa-robot"></i></div>
+                        <h3>Agentic Orchestration</h3>
+                        <p>Mastering **Cursor**, **Claude 3.5**, and **Agentic Workflows** to maintain high coding
+                            velocity while ensuring architectural integrity.</p>
+                        <div class="ai-stack">
+                            <span>Claude</span>
+                            <span>Cursor</span>
+                            <span>Specialized Agents</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Human-in-the-Loop Audit -->
+                <div class="ai-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="ai-card-glow"></div>
+                    <div class="ai-card-content">
+                        <div class="ai-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Security & Logic Audit</h3>
+                        <p>Expert human-in-the-loop verification. I audit every line of AI-generated logic for security
+                            vulnerabilities and edge-case handling.</p>
+                        <div class="ai-status">
+                            <span class="pulse"></span> Verified Human Control
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: System Synthesis -->
+                <div class="ai-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="ai-card-glow"></div>
+                    <div class="ai-card-content">
+                        <div class="ai-icon"><i class="fas fa-brain"></i></div>
+                        <h3>System Synthesis</h3>
+                        <p>Strategic prompt engineering and iterative refinement. I treat AI as a junior dev,
+                            orchestrating entire systems from design to deployment.</p>
+                        <div class="ai-footer">
+                            <i class="fas fa-code-branch"></i> Git-Driven Refinement
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modern Terminal Interface -->
+            <div class="terminal-container" data-aos="fade-up" data-aos-delay="400">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="terminal-title">agentic-workflow --amit</div>
+                </div>
+                <div class="terminal-body" id="ai-terminal">
+                    <!-- Terminal content will be injected by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Academics</h2>
+            <div class="achievements-content">
+                <div class="chart-container">
+                    <h3>Academic Growth (CGPA)</h3>
+                    <div class="badge-container">
+                        <span class="badge">9+ Pointer Achiever</span>
+                    </div>
+                    <canvas id="cgpaChart"></canvas>
+                </div>
+                <div class="other-achievements">
+                    <div class="achievement-card">
+                        <i class="fas fa-trophy"></i>
+                        <h4>Hackathon Participation</h4>
+                        <p>Active participant in coding hackathons solving real-world problems.</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Soft Skills Training</h4>
+                        <p>Certified in communication and professional soft skills.</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Engineering Certifications</h4>
+                        <p>Completed various technical certifications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Source & Community Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <h2 class="section-title">Open Source & Community</h2>
+            <div class="community-grid">
+                <!-- Contribution 1: Quantum Hacks -->
+                <div class="community-card" data-aos="fade-right">
+                    <div class="card-image">
+                        <img src="assets/Screenshot 2026-02-21 232523.png" alt="Quantum Hacks">
+                    </div>
+                    <div class="card-body">
+                        <h3>Organizing Quantum Hacks</h3>
+                        <p>Led a team of organizers to host a successful college-level hackathon. Managed everything
+                            from technical infrastructure and judge coordination to student outreach, fostering a spirit
+                            of innovation among 200+ participants.</p>
+                        <span class="community-tag">Leadership</span>
+                    </div>
+                </div>
+
+                <!-- Contribution 2: Open Source -->
+                <div class="community-card" data-aos="fade-left">
+                    <div class="card-image">
+                        <img src="assets/project.jpeg" alt="GitHub Contributions">
+                    </div>
+                    <div class="card-body">
+                        <h3>Open Source Contributions</h3>
+                        <p>Actively contributing to various open-source projects on GitHub, focusing on simplifying
+                            developer tools and creating reusable UI components. Passionate about sharing knowledge and
+                            improving collective code quality.</p>
+                        <span class="community-tag">Github</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery & Achievements Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery &amp; Achievements</h2>
+            <div class="gallery-marquee">
+                <div class="gallery-track">
+                    <!-- Item 1 -->
+                    <div class="gallery-item" data-title="Certificate"
+                        data-desc="Certification earned in technical skills domain.">
+                        <img src="assets/certificate1.jpg" alt="Certificate 1">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="gallery-item" data-title="Certificate"
+                        data-desc="Professional development and course completion certificate.">
+                        <img src="assets/certificate2.jpg" alt="Certificate 2">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="gallery-item" data-title="Certificate"
+                        data-desc="Technical certification earned through dedicated learning and assessment.">
+                        <img src="assets/certificate3.jpg" alt="Certificate 3">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="gallery-item" data-title="Hackathon Participation"
+                        data-desc="Active participation in multiple hackathons, collaborating and building real-world solutions.">
+                        <img src="assets/WhatsApp Image 2026-03-14 at 4.10.05 PM.jpeg" alt="Hackathon Participation">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="gallery-item" data-title="Event Organizing"
+                        data-desc="Organizing Quantum Hacks and other college tech events — managing teams, judges, and logistics.">
+                        <img src="assets/internship.jpg" alt="Event Organizing">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="gallery-item" data-title="Project Screenshots"
+                        data-desc="Screenshots from Sanket, MedExpress, Bank Management System, and other live projects.">
+                        <img src="assets/project.jpeg" alt="Project Screenshots">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <!-- Item 7 -->
+                    <div class="gallery-item" data-title="Solo Hack Winner"
+                        data-desc="Won Solo Hack competition, demonstrating individual problem-solving and development skills.">
+                        <img src="assets/topper.jpeg" alt="Solo Hack Winner">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <!-- Item 8 -->
+                    <div class="gallery-item" data-title="Best Concept Award"
+                        data-desc="Received Best Concept Award for an innovative project idea presented at a tech event.">
+                        <img src="assets/best concept.jpeg" alt="Best Concept Award">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <span class="lightbox-close"><i class="fas fa-times"></i></span>
+            <div class="lightbox-icon-area">
+                <img id="lightbox-img" src="" alt=""
+                    style="max-width:100%;max-height:60vh;border-radius:8px;display:none;">
+                <i class="fas fa-image lightbox-icon-display" style="display:none;"></i>
+            </div>
+            <h3 id="lightbox-title">Title</h3>
+            <p id="lightbox-desc">Description</p>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- Peer Recommendations (Testimonials) Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header-flex">
+                <h2 class="section-title">Peer Recommendations</h2>
+                <button id="open-recommendation-modal" class="btn btn-primary btn-sm">
+                    <i class="fas fa-plus"></i> Add Your Recommendation
+                </button>
+            </div>
+            <div class="testimonial-marquee">
+                <div class="testimonial-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">"Amit's ability to simplify complex backend logic while maintaining
+                            a clean UI is exceptional. He was a key driver in our last hackathon win."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <strong>Rahul Sharma</strong>
+                                <span>Hackathon Teammate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">"As an organizer of Quantum Hacks, Amit showed incredible leadership
+                            and technical foresight. He's one of the most proactive developers I've worked with."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <strong>Sneha Patil</strong>
+                                <span>Co-Organizer, Quantum Hacks</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">"His grasp of Java and Database Management is beyond his years. The
+                            Bank Management project he built was enterprise-ready."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <strong>Prof. Deshmukh</strong>
+                                <span>College Mentor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">Let build something impactful together.</p>
+            <div class="contact-links">
+                <a href="mailto:garjeamit841@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Amit,"
+                    class="contact-link"><i class="fas fa-envelope"></i> Email Me</a>
+                <a href="https://www.linkedin.com/in/amitgarje" target="_blank" class="contact-link"><i
+                        class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/amitgarje" target="_blank" class="contact-link"><i
+                        class="fab fa-github"></i> GitHub</a>
+                <a href="https://wa.me/919029263731" class="contact-link"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Amit Garje. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Smart Features -->
+    <!-- Chatbot Toggle -->
+    <div class="chatbot-toggler">
+        <i class="fas fa-comment-dots"></i>
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="chatbot">
+        <header>
+            <h2>Ask About Amit</h2>
+            <span class="close-btn"><i class="fas fa-times"></i></span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined"><i class="fas fa-robot"></i></span>
+                <p>Hi! I'm Amit's AI assistant. Ask me about his skills, projects, or recent activities!</p>
+            </li>
+        </ul>
+        <div class="suggested-questions">
+            <button class="sq-btn" data-question="What's your recent activity?">Recent Activity</button>
+            <button class="sq-btn" data-question="What's your AI workflow?">AI Workflow</button>
+            <button class="sq-btn" data-question="Why should I hire Amit?">Hire Amit</button>
+        </div>
+        <div class="chat-input">
+            <textarea placeholder="Type a message..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="material-symbols-rounded"><i class="fas fa-paper-plane"></i></span>
+        </div>
+    </div>
+
+    <!-- Recommendation Success Modal -->
+    <div id="recommendation-success-modal" class="modal">
+        <div class="modal-content glass-modal text-center">
+            <div class="success-checkmark">
+                <div class="check-icon">
+                    <span class="icon-line line-tip"></span>
+                    <span class="icon-line line-long"></span>
+                    <div class="icon-circle"></div>
+                    <div class="logo">
+                        <span class="logo-text">A.G</span>
+                        <div id="logo-pet-container" class="logo-pet-container">
+                            <img src="pixel_cat_sprite_1773515483129.png" alt="Cat Mascot" id="logo-pet">
+                        </div>
+                    </div>
+                </div>
+                <h2 class="mt-4">Response Received!</h2>
+                <p>Thank you for your kind words. Your recommendation has been added to the showcase.</p>
+                <button class="btn btn-primary mt-4 close-success-modal">Great!</button>
+            </div>
+        </div>
+
+        <!-- Add Recommendation Modal -->
+        <div id="add-recommendation-modal" class="modal">
+            <div class="modal-content glass-modal">
+                <span class="close-recommendation-modal close-modal">&times;</span>
+                <h2>Add Recommendation</h2>
+                <form id="recommendation-form">
+                    <div class="form-group">
+                        <label for="rec-name">Your Name</label>
+                        <input type="text" id="rec-name" placeholder="E.g. John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rec-role">Your Role / Relationship</label>
+                        <input type="text" id="rec-role" placeholder="E.g. Project Manager, Teammate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rec-text">Recommendation</label>
+                        <textarea id="rec-text" placeholder="Share your experience working with Amit..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit Recommendation</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Recommendation Modal -->
+        <div id="recommendation-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Welcome! Who are you?</h2>
+                <div class="personas">
+                    <button class="btn btn-outline persona-btn" data-persona="recruiter">HR / Recruiter</button>
+                    <button class="btn btn-outline persona-btn" data-persona="student">Student</button>
+                    <button class="btn btn-outline persona-btn" data-persona="developer">Developer</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>
