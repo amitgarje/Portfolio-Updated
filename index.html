@@ -638,7 +638,8 @@
                                         e-commerce platform for mobile accessories.</p>
                                     <p><strong><i class="fas fa-star"></i> Key Features:</strong> Product management,
                                         shopping cart, user authentication, inventory tracking.</p>
-                                    <p><strong><i class="fas fa-tools"></i> Tech:</strong> JSP, Servlet, MySQL, HTML/CSS, JS</p>
+                                    <p><strong><i class="fas fa-tools"></i> Tech:</strong> JSP, Servlet, MySQL,
+                                        HTML/CSS, JS</p>
                                 </div>
                             </div>
                             <button class="btn-flip-back"><i class="fas fa-undo"></i> Back</button>
@@ -1103,10 +1104,34 @@
                 </div>
             </div>
         </div>
+        <!-- Chatbot Toggler -->
+        <button class="chatbot-toggler">
+            <i class="fas fa-comment-dots"></i>
+            <i class="fas fa-times"></i>
+        </button>
 
-
+        <!-- Chatbot Window -->
+        <div class="chatbot">
+            <header>
+                <h2>AI Assistant</h2>
+                <p>Hello! Ask me about Amit.</p>
+                <span class="fas fa-times"></span>
+            </header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="fas fa-robot"></span>
+                    <p>Hi there 👋<br>How can I help you today? You can ask me about Amit's skills, education, or
+                        achievements.</p>
+                </li>
+            </ul>
+            <div class="chat-input">
+                <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+                <span id="send-btn" class="fas fa-paper-plane"></span>
+            </div>
+        </div>
 
         <script src="script.js"></script>
+        <script src="ai-chatbot.js"></script>
 </body>
 
 </html>
